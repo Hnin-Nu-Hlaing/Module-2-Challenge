@@ -1,0 +1,87 @@
+/* Global Veriable */
+:root {
+    /* typography */
+    --headline-font: 'Source Serif Pro', serif;
+    --fs-base: 1rem;
+    --cfs: calc(var(--fs-base) * 2); 
+
+    /* color */
+    --primary-color: #FC94AF;
+    --secondary-color: #F8EEEC;
+    --tertiary-color: #FCBACB;
+
+
+    /* helper */
+    --spacer: 1rem;
+    --spacer-dbl: calc(var(--spacer) * 3);
+}
+
+body{
+    text-align: center;
+    height: 100vh;
+    background-image: linear-gradient(
+        var(--primary-color) 50%,
+        var(--secondary-color) 50%
+    );
+} 
+
+h1{
+    font-family: var(--headline-font);
+    margin: var(--spacer);
+    font-size: 50px;
+}
+
+img {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+}
+
+span {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.info {
+    padding: var(--spacer);
+}
+
+.info p {
+    font-size: var(--cfs);
+}
+
+h2{
+    font-size: var(--cfs);
+}
+
+.btn {
+    text-decoration: none;
+    border: solid 1px;
+    padding: var(--spacer);
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: black;
+    font-weight: bold;
+    
+}
+
+.btn:hover {
+    background-color: var(--tertiary-color);
+}
+
+footer {
+    font-size: var(--cfs);
+    margin: var(--spacer-dbl);
+}
+
+.fa {
+    text-decoration: none;
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 50%;
+    color: var(--secondary-color);
+}
+
+.fa:hover {
+    background-color: var(--tertiary-color);
+}
